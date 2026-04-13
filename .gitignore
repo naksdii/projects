@@ -1,5 +1,4 @@
 .vscode/
 *.out
-compile_commands.json
-shell.nix
-.clang-format
+*compile_commands.json
+*shell.nix
