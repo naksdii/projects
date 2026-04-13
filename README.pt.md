@@ -38,4 +38,5 @@ Aqui estão os projetos em que trabalhei até agora. Cada um é um programa inde
 - **radix_lsb/**: Implementação de Radix sort (LSB).
 
 Sinta-se à vontade para explorar, fazer fork ou sugerir melhorias. Estou sempre aberto a feedback enquanto continuo aprendendo!
--# eu usei inteligencia artificial para gerar este [readme](README.pt.md)
+
+eu usei inteligencia artificial para gerar este [readme](README.pt.md)
