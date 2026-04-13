@@ -1,0 +1,35 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 8,
+  "editor.insertSpaces": true,
+
+  // Como o binário está no seu PATH, basta o nome:
+  "clangd.path": "clangd",
+
+  // Define o clangd como o formatador padrão para C e C++
+
+  "clangd.arguments": [
+    "--query-driver=/nix/store/*gcc*/bin/g++",
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=always",
+    "--fallback-style=LLVM"
+  ],
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Define o nix-ide como formatador padrão para arquivos .nix
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
+
+  // Configura qual ferramenta o nix-ide deve usar
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nil", // Recomendo instalar o pacote 'nil' para IntelliSense
+  "nix.formatterPath": "nixfmt",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

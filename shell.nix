@@ -1,0 +1,1 @@
+import ~/nixos/nix-shell/vscode.nix

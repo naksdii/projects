@@ -1,0 +1,43 @@
+[
+  {
+    "file": "main.cpp",
+    "arguments": ["g++", "main.cpp", "-o", "programa"],
+    "directory": "/home/naksdii/projects",
+    "output": "programa"
+  },
+  {
+    "file": "main.cpp",
+    "arguments": [
+      "g++",
+      "-fPIC",
+      "-fstack-clash-protection",
+      "-O2",
+      "-U_FORTIFY_SOURCE",
+      "-D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_FAST",
+      "-Wformat",
+      "-Wformat-security",
+      "-Werror=format-security",
+      "-fzero-call-used-regs=used-gpr",
+      "-fstrict-flex-arrays=1",
+      "-fstack-protector-strong",
+      "--param",
+      "-fno-strict-overflow",
+      "-fno-omit-frame-pointer",
+      "-mno-omit-leaf-frame-pointer",
+      "main.cpp",
+      "-o",
+      "programa",
+      "-U_FORTIFY_SOURCE",
+      "-D_FORTIFY_SOURCE=3",
+      "-B/nix/store/jms7zxzm7w1whczwny5m3gkgdjghmi2r-glibc-2.42-51/lib/",
+      "-idirafter",
+      "/nix/store/h0ip0h6qp7kc2wm7mwjaglkxxbzmjri4-glibc-2.42-51-dev/include",
+      "-idirafter",
+      "/nix/store/lvwga6ivl1d4lnw0zis9ajs0rqx9gp4i-gcc-15.2.0/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include-fixed",
+      "-B/nix/store/ab3753m6i7isgvzphlar0a8xb84gl96i-gcc-15.2.0-lib/lib",
+      "-frandom-seed=5kzr4h5d9m"
+    ],
+    "directory": "/home/naksdii/projects",
+    "output": "programa"
+  }
+]
