@@ -48,7 +48,6 @@ void sort(longVector& arr) {
             }
         }
         arr = std::move(temp);
-        std::cout << "Bit " << i << " processado." << std::endl;
     }
 }
 }  // namespace radix
