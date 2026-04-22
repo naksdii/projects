@@ -6,14 +6,13 @@ struct node {
     node* next = nullptr;
     node(int value) : data(value) {}
 };
-
 class list {
    private:
-    node* head = nullptr; // Initialize to nullptr
+    node* head = nullptr;  // Initialize to nullptr
 
    public:
     list() = default;
-    
+
     ~list() { erase(); }
 
     void add(int value) {
